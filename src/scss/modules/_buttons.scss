@@ -1,0 +1,18 @@
+@import "compass";
+@import "vars";
+
+button {
+  width: 17%;
+  height: 30px;
+  border: none;
+  padding: 0;
+  text-align: center;
+  background-color: $bgGradient-start; // Old browsers
+  @include background-image(linear-gradient(top, #4d4d4d 50%, $bgGradient-end 99%));
+  
+  &:hover, &:active {
+    background-color: $bgGradient-start; // Old browsers
+    
+    @include background-image(linear-gradient(top, $bgGradient-end 50%, #4d4d4d 99%));
+  }
+}

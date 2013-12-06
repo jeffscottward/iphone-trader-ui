@@ -1,0 +1,80 @@
+!!! 5
+html.no-js
+  head
+    meta(charset='utf-8')
+    title Lab49 Test - Jeff Ward
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(href='//www.google-analytics.com', rel='dns-prefetch')
+    link(href='//ajax.googleapis.com', rel='dns-prefetch')
+    link(href='assets/css/style.css', rel='stylesheet')
+    script(src='assets/js/vendor/modernizr-2.6.2.min.js')
+  body
+    section.company-module
+      header.header(role='banner')
+        .buy-sell-module
+          .buy-sell-header GBPUSD
+          table
+            tr
+              td.buy
+                a(href='#')
+                  table
+                    tr 
+                      td BUY
+                    tr
+                      td.numbers
+                        span.base 1.23
+                        span.important.up 45
+                    tr 
+                      td.against (USD 1,000,000,000)
+              td.sell
+                a(href='#')
+                  table
+                    tr 
+                      td SELL
+                    tr 
+                      td
+                        span.base 1.23
+                        span.important.down 42
+                    tr 
+                      td.against (USD 1,000,000,000)
+        form.re-calculator(name='re-calculator')
+          button.btn USD:
+          input(type='text', placeholder="1,000,000,000", value="1,000,000,000") 
+      hr.divider
+      div.related-news
+        h2 RELATED NEWS
+        ul.related-news-list
+          - var i = 3;
+          - while(i >= 1)
+            li
+              a(href='#')
+                p.article-title GBP related news article link to go here and here and wrap as required.
+              p.article-datetime 
+                span.date 01 OCT 2012 
+                span.time 12:28 CET
+                span.time-passed (2hrs 10min ago)
+            - --i
+      hr.divider
+      footer.footer(role='contentinfo')
+        h3 YOUR SALES REPRESENTATIVE:
+        div.bio
+          img.bio-pic(src="http://www.placekitten.com/50/50")
+          div.name
+            .names
+              span.first-name Firstname
+              span &nbsp;
+              span.last-name Lastname
+            a.contact-link(href='#') CONTACT NOW
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\\/script>');
+    script(src='assets/js/scripts.min.js')
+    script.
+      (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
+      (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
+      l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXXXXX-XX');
+      ga('send', 'pageview');

@@ -1,0 +1,169 @@
+@import "compass";
+@import "vars";
+
+//////////////////////////
+// Wrapping Layout 
+//////////////////////////
+
+.company-module {
+  max-width: 320px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: $bgGradient-start; // Old browsers
+  @include background-image(linear-gradient(top, $bgGradient-start 70%, $bgGradient-end 99%))
+
+}
+
+//////////////////////////
+// Buy-Sell Module
+//////////////////////////
+
+.buy-sell-header {
+  background: #5A2b74;
+  border-bottom: 1px solid #6C4387;
+  text-align: center;
+  padding: 5px;
+}
+
+.buy-sell-module {
+  background: #5A2b74;
+  border: 1px solid black;
+  border-bottom: 1px solid #494651;
+
+  .buy, .sell {
+    background-color: #5a2b74; // Old browsers
+    @include background-image(linear-gradient(top,  #5a2b74 0%,#562f6f 50%,#4d2367 51%,#412a58 100%));
+
+    table {
+      min-height: 130px;
+    }
+
+    &:hover {
+      @include background-image(linear-gradient(top, #412a58 0%, #4d2367 50%, #562f6f 51%, #5a2b74 100%));      
+    }
+  }
+
+  .numbers {
+    span {
+      color: lighten($baselineFontColor,5%);  
+    }
+  }
+
+  .base{
+    font-size: 16px;
+    vertical-align: bottom;
+    position: relative;
+    top: -11px;
+  }
+
+  .important {
+    font-size: 35px;
+
+    // Default to the down position
+    &:after{
+      display: inline-block;
+      top: 0px;
+      left: 5%;
+      content: '▾';
+      color: red;
+      position: relative;
+    }
+
+    &.up {
+      &:after{
+        @include transform(rotate(180deg));
+        color: lime;
+      }
+    }
+  }
+
+  .buy {
+  	border-right: 1px solid black;
+  }
+
+  .against {
+    color: #937CAA; 
+  }
+}
+
+.re-calculator {
+  margin-top: 5px;
+
+	input{
+		width: 80%;
+    float: right;
+	}
+}
+
+//////////////////////////
+// Related News Module
+//////////////////////////
+
+.related-news {
+  padding: 0 5px;
+  min-height: 300px;
+  
+  h2 {
+    color: #d5d5d5;
+  }
+}
+
+.related-news-list, 
+.related-news-list li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.article-title {
+	margin-bottom: 0;
+  font-size: 14px;
+  color: #b7b7b7;
+}
+
+.article-datetime * {
+  color: #767676;
+  font-style: italic;
+  font-size: 12px;
+}
+
+//////////////////////////
+// Bio Module
+//////////////////////////
+
+.bio {
+
+	.bio-pic, .name {
+		display: inline-block;
+		vertical-align: top;
+    font-style: italic;
+	}
+
+  .bio-pic {
+    margin-right: 10px;
+  }
+
+  .name * {
+      color: #767676;
+  }
+
+	.contact-link {
+		display: inline-block;
+		color: lighten($top,15%);
+		border-bottom: 1px dashed lighten($top,15%);
+		font-style: italic;
+    height: 20px;
+
+    &:after{
+      display: block;
+      content: '';
+      border-bottom: 1px dashed lighten($top,15%);
+      width: 100%;
+      height: 1px;
+      position: relative;
+      top: -2px;
+      right: 2px;
+    }
+	}
+}

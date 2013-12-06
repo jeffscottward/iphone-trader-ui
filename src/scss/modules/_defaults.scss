@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  background: #fff;
+  color: #444;
+}
+
+table, 
+tbody {
+  width: 100%;
+}
+
+table, 
+table * {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, 
+tbody {
+  width: 100%;
+}
+
+table, 
+table * {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+button, input {
+  font-size: 14px;
+  height: $formElementHeight;
+}
