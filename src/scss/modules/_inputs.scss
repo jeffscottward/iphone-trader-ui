@@ -1,6 +1,6 @@
 input{
   padding-left: 5px;
-  color: #767676;
+  //color: #767676;
   border: 1px solid #474747;
   background-color: $bgGradient-start; // Old browsers
   @include background-image(linear-gradient(top, #272727 10%, $bgGradient-start 99%));
