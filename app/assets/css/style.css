@@ -7,6 +7,15 @@
  * Copyright 2013. MIT licensed.
  */
 
+/*!
+ * fireshell
+ * Fiercely quick and opinionated front-ends
+ * http://getfireshell.com
+ * @author Todd Motto
+ * @version 1.0.0
+ * Copyright 2013. MIT licensed.
+ */
+
 /* line 1, ../../../src/scss/modules/_clearfix.scss */
 .clear:before, .clear:after {
   content: ' ';
