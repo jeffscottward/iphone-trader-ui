@@ -1,6 +1,6 @@
 ##To get it .... 
 ````
-$ git clone git@github.com:jeffscottward/Test49.git 
+$ git clone git@github.com:jeffscottward/iphone-trader-ui.git 
 ````
 ##To install it .... 
 from the root project folder.
